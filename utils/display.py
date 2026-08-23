@@ -16,7 +16,7 @@ except ImportError:
     HAS_RICH = False
     console = None
 
-# Banner estilizado NETHER na cor vermelha
+
 SKID_BANNER = r"""
  ██████╗██╗  ██╗██╗██████╗ 
 ██╔════╝██║ ██╔╝██║██╔══██╗
@@ -36,7 +36,7 @@ def clear_screen():
 def show_banner(subtitle: str = ""):
     """Exibe o banner skid em vermelho."""
     if HAS_RICH:
-        # Banner NETHER em vermelho vivo
+       
         banner_text = Text(SKID_BANNER, style="bold red")
         console.print(Align.center(banner_text))
         
